@@ -3,41 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Lab02_Lab03</title>
-  <style>
-  body{background-color: #E8EAF6;font-family: sans-serif,Times New Roman;padding-left: 5%;padding-right: 5%;min-width: 600px;}
-  header{background-color: #1A237E;color: #FFFFFF;padding: 1em 0 1em 1em;}
-  .top{font-size: 1.5em; font-weight: bold; margin:0;}
-  .text{font-style: italic;margin:0;}
-  nav{background-color: #3F51B5;padding: 0.3em 0 0.3em 1em;}
-  a{margin-right: 0.3em;font-weight: bold;color: #00B0FF;}
-  main{background-color: #FFFFFF;margin:0.5em 0 0.5em 0;padding: 0.5em 0.5em 0.5em 0.5em;}
-  .border{border-color: #C5CAE9;border-style:solid;margin-bottom: 0.5em;}
-  .title{background-color: #7986CB;color: #FFFFFF;padding: 1em 0 1em 1em;font-weight: bold;}
-  .change{background-color: #F50057;}
-  .image{width: 100%;height: 100%;}
-  .note{background-color: #C5CAE9;color: #7990A3;font-style: italic;padding: 0.5em 0 0.5em 1em;}
-  .info{padding: 0.5em 1em 0.5em 1em;}
-  .info a{margin:0;}
-  .icon{padding: 0.5em 1em 0.5em 1em;}
-  /* .icon img{}float: right; display:visibility图片位置存在问题*/
-  .aut{color: #C5CAE9;font-style: italic;padding: 0.5em 0 0.5em 1em;margin: 0;display: inline-block;}
-  .time{color:#F5A2C1;font-style: italic;display: inline-block;}
-  .adv{padding:0 0 0.5em 1em;margin: 0;}
-  hr{color:#C5CAE9;}
-  footer{background-color: #1A237E;color: #FFFFFF;padding: 1.3em 0 1.3em 1em;}
-  footer nav{background-color: #1A237E;padding: 0;}
-  footer .text{margin-top: 0.6em;}
-  </style>
-  <script type="text/javascript">
-    function change(){
-      var title = document.getElementById('title');
-      title.className="change";
-    }
-  </script>
+  <link rel="stylesheet" type="text/css" href="Lab03.css">
 </head>
 
-<body>
 
+<body>
   <header>
     <p class="top">Share Your Travels</p>
     <p class="text">Let us know where you've been</p>
@@ -48,8 +18,13 @@
     <a href="#">Reviews</a>
   </nav>
   <main>
+
     <section class="border">
-      <section id="title" class="title">NEW YORK - CENTRAL PARK</section>
+      <section class="title">
+        <div>
+          NEW YORK - CENTRAL PARK
+        </div>
+      </section>
       <section><img src="images/central-park.jpg" alt="New York" class="image"></section>
       <section class="note">Conservatory Pond in Central Park</section>
       <section class="info">
@@ -57,42 +32,53 @@
         in <a href="#">New York City</a> was taken on October 22,2016 with a Canon EOS 30D camera.
       </section>
       <section class="icon">
-        <img src="images/icon_download.png">
-        <img src="images/icon_mail.png">
-        <img src="images/icon_map.png">
-        <img src="images/icon_up.png">
-        <img src="images/icon_down.png">
+        <section class="spa">
+          <img src="images/icon_download.png">
+          <img src="images/icon_mail.png">
+          <img src="images/icon_map.png">
+          <img src="images/icon_up.png">
+          <img src="images/icon_down.png">
+        </section>
       </section>
     </section>
 
     <section class="border">
-      <section id="title" class="title">RELATED PHOTOS</section>
-      <section>
-        <img src="images/related-square1.jpg">&nbsp;
-        <img src="images/related-square2.jpg">&nbsp;
-        <img src="images/related-square3.jpg">&nbsp;
+      <section class="title">
+        <div>
+          RELATED PHOTOS
+        </div>
+      </section>
+      <section style="font-size:0;">
+        <img src="images/related-square1.jpg" class="smaimg">
+        <img src="images/related-square2.jpg" class="smaimg">
+        <img src="images/related-square3.jpg" class="smaimg">
       </section>
     </section>
 
     <section class="border" style="margin-bottom:0">
-      <section id="title" class="title" onfocus="change()" >REVIEWS</section>
-      <section>
-        <p class="aut">By Ricardo on </p><p class="time">&ensp;2016-05-23</p>
-        <p class="adv">Easy on the HDR buddy</p>
-        <hr>
-        <p class="aut">By Susan on </p><p class="time">&ensp;2016-11-18</p>
-        <p class="adv">I love Central Park</p>
-        <hr>
+      <section class="title">
+        <div>
+          REVIEWS
+        </div>
+        </section>
+        <section>
+          <div class="fam">
+
+          <p class="aut">By Ricardo on </p><p class="time">&ensp;2016-05-23</p>
+          <p style="margin-top:0.5em">Easy on the HDR buddy</p>
+          <hr/>
+          <p class="aut">By Susan on </p><p class="time">&ensp;2016-11-18</p>
+          <p style="margin-top:0.5em">I love Central Park</p>
+          <hr/>
+
+        </div>
+        </section>
       </section>
-    </section>
-  </main>
 
-  <footer>
-    <nav><a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a></nav>
-    <p class="text">Copyright &copy 2017 Share Your Travels</p>
-  </footer>
-
-</body>
-</html>
-
-<!-- 问题：图片位置；水平线；标题事件触发 -->
+    </main>
+    <footer>
+      <nav><a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a></nav>
+      <p class="text">Copyright &copy; 2017 Share Your Travels</p>
+    </footer>
+  </body>
+  </html>
