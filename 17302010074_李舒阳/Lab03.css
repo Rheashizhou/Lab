@@ -24,9 +24,12 @@ section,main,img,div,nav {
 }
 nav{
   background-color: #3F51B5;
-  padding: 0.3em 0 0.3em 1em;
+  /* padding: 0.3em 0 0.3em 1em; */
+  padding-left: 1em;
 }
 a{
+  display:inline-block;
+  padding: 0.3em;
   margin-right: 0.3em;
   font-weight: bold;
   color: #00B0FF;
