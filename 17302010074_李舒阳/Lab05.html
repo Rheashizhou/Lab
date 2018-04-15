@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap to Lab05</title>
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header class="container">
+    <div class="row align-items-center">
+        <div class="col-md-5">
+        <section>
+          <h1 class="text-center">Share Your Travels</h1>
+          <p class="text-center"><em>Let us know where you've been</em></p>
+        </section>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2 text-center">
+        <a href="Lab05_form.html" class="text-secondary">Upload</a>
+      </div>
+      <div class="col-md-2 text-center">
+        <a href="#" class="text-secondary">Related photos</a>
+      </div>
+      <div class="col-md-2 text-center">
+        <a href="#" class="text-secondary">Reviews</a>
+      </div>
+    </div>
+</header>
+
+<main class="container">
+  <div class="row">
+    <div class="col-md-7 panel panel-default">
+      <div class="card">
+        <div class="card-body">
+          <h3>New York - Central Park</h3>
+          <figure>
+            <figcaption>
+              Conservatory Pond in Central Park
+            </figcaption>
+            <a href="images/central-park.jpg">
+              <img class="w-100" src="images/central-park.jpg" alt="Central Park"
+                   title="Central Park" style="width:100%"/>
+            </a>
+          </figure>
+          <div>
+            <p>This photo of Conservatory Pond in
+              <a href="#">Central Park</a> in
+              <a href="#">New York City</a> was taken on October 22,
+              2016 with a Canon EOS 30D camera.
+            </p>
+            <p class="text-right">
+              <img src="images/icon_download.png" alt="" class="well well-sm"/>
+              <img src="images/icon_mail.png" alt="" class="well well-sm"/>
+              <img src="images/icon_map.png" alt="" class="well well-sm"/>
+              <img src="images/icon_up.png" alt="" class="well well-sm"/>
+              <img src="images/icon_down.png" alt="" class="well well-sm"/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <section class="card panel panel-default">
+        <div class="card-body">
+          <h3>Related Photos</h3>
+          <div class="carousel" id="carouselcontainer" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carouselcontainer" data-slide-to="0"></li>
+              <li data-target="#carouselcontainer" data-slide-to='1'></li>
+              <li data-target="#carouselcontainer" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <a href="images/related-square1.jpg">
+                  <img src="images/related-square1.jpg" class="w-100" style="width:100%"/>
+                </a>
+              </div>
+              <div class="item">
+                <a href="images/related-square2.jpg">
+                  <img src="images/related-square2.jpg" class="w-100" style="width:100%"/>
+                </a>
+              </div>
+              <div class="item">
+                <a href="images/related-square3.jpg">
+                  <img src="images/related-square3.jpg" class="w-100" style="width:100%"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card panel panel-default">
+        <div class="card-body">
+          <h3>Reviews</h3>
+          <div>
+            <a href="#review1" data-toggle="collapse" class="text-muted">
+              <div class="text-center"><em><strong>Ricardo</strong></em><br>
+                <button type="button" class="btn btn-primary btn-sm">2016-05-23</button>
+              </div>
+            </a>
+            <p class="collapse" id="review1">Easy on the HDR buddy.</p>
+          </div>
+          <hr>
+          <div>
+            <a href="#review2" data-toggle="collapse" class="text-muted">
+              <p class="text-center"><em><strong>Susan</strong></em><br>
+                <button type="button" class="btn btn-primary btn-sm">2016-11-18</button>
+              </p>
+            </a>
+            <p class="collapse" id="review2">I love Central Park.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+ </main>
+
+<footer class="container">
+    <ul class="nav nav-justified">
+      <li class="nav-item"><a class="text-info" href="#">Home</a></li>
+      <li class="nav-item"><a class="text-info" href="#">Browse</a></li>
+      <li class="nav-item"><a class="text-info" href="#">Search</a></li>
+    </ul>
+    <p class="text-center"><em>Copyright &copy; 2017 Share Your Travels</em></p>
+</footer>
+
+</body>
+</html>

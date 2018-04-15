@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chapter 5</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body>
+<header class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <section>
+          <h1>Share Your Travels</h1>
+          <p class="text-center"><em>Let us know where you've been</em></p>
+        </section>
+      </div>
+      <div class="col-md-8">
+        <ul class="nav nav-justified">
+          <li class="nav-item">
+            <a class="nav-link disabled card-link" href="Lab05.html">Gallery</a></li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Feeling Lucky</a></li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">User</a></li>
+        </ul>
+      </div>
+    </div>
+</header>
+<section class="container">
+  <div class="card  panel panel-default">
+    <div class="card-body">
+      <form method="post" action="http://www.randyconnolly.com/tests/process.php">
+        <fieldset class="form-group">
+          <legend>Photo Details</legend>
+          <label>Title</label>
+          <input type="text" name="title" placeholder="Give your photo a descriptive name" class="form-control"/>
+          <br/>
+          <label>Description</label>
+          <textarea name="description" placeholder="Adding a rich description will help with search results"
+                    class="form-control"></textarea>
+          <br/>
+          <label>Continent</label>
+          <select name="continent" class="form-control">
+            <option>Choose continent</option>
+            <option>Africa</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>North America</option>
+            <option>South America</option>
+          </select>
+          <br/>
+          <label>Country</label>
+          <select name="country" class="form-control">
+            <option>Choose country</option>
+            <option>Canada</option>
+            <option>Mexico</option>
+            <option>United States</option>
+          </select>
+          <br/>
+          <label>City</label>
+          <input type="text" name="city" list="cities" class="form-control"/>
+          <datalist id="cities">
+            <option>Calgary</option>
+            <option>Montreal</option>
+            <option>Toronto</option>
+            <option>Vancouver</option>
+          </datalist>
+          <br/>
+          <div>
+            <label>Copyright? </label>
+          </div>
+          <div>
+            <div class="radio-inline">
+              <input type="radio" name="copyright" value="1">All rights reserved</input>
+            </div>
+            <br>
+            <div class="radio-inline">
+              <input type="radio" name="copyright" value="2" checked>Creative Commons</input>
+            </div>
+          </div>
+          <br/>
+          <div>
+            <label>Creative Commons Types </label>
+          </div>
+          <div>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="cc[]" value="1"> Attribution
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="cc[]" value="2"> Noncommercial
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" name="cc[]" value="3"> No Derivative Works
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"/>I accept the software license
+            </label>
+          </div>
+          <div class="form-inline">
+            <div class="form-group">
+              <label>Rate this photo:</label>
+              <br>
+              <input type="number" min="1" max="5" name="rate" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <label>Color Collection:</label>
+              <br>
+              <input type="color" name="color" class="form-control"/>
+            </div>
+          </div>
+          <br/>
+          <div class="form-inline">
+            <div class="form-group">
+              <label>Date Taken:</label>
+              <br>
+              <input type="date" name="date" class="form-control"/>
+            </div>
+            <div class="form-group">
+              <label>Time Taken:</label>
+              <br>
+              <input type="time" name="time" class="form-control"/>
+            </div>
+          </div>
+          <br/>
+          <div class="btn-group">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
