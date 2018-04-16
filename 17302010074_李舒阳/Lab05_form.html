@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Chapter 5</title>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 <header class="container">
@@ -36,8 +36,7 @@
           <input type="text" name="title" placeholder="Give your photo a descriptive name" class="form-control"/>
           <br/>
           <label>Description</label>
-          <textarea name="description" placeholder="Adding a rich description will help with search results"
-                    class="form-control"></textarea>
+          <textarea name="description" placeholder="Adding a rich description will help with search results" class="form-control"></textarea>
           <br/>
           <label>Continent</label>
           <select name="continent" class="form-control">
@@ -59,71 +58,57 @@
           <br/>
           <label>City</label>
           <input type="text" name="city" list="cities" class="form-control"/>
-          <datalist id="cities">
+          <!-- <datalist id="cities">
             <option>Calgary</option>
             <option>Montreal</option>
             <option>Toronto</option>
             <option>Vancouver</option>
-          </datalist>
+          </datalist> -->
           <br/>
-          <div>
-            <label>Copyright? </label>
+          <label>Copyright? </label>
+          <div class="radio-inline">
+            <input type="radio" name="copyright" value="1">All rights reserved</input>
           </div>
-          <div>
-            <div class="radio-inline">
-              <input type="radio" name="copyright" value="1">All rights reserved</input>
-            </div>
-            <br>
-            <div class="radio-inline">
-              <input type="radio" name="copyright" value="2" checked>Creative Commons</input>
-            </div>
+          <div class="radio-inline">
+            <input type="radio" name="copyright" value="2" checked>Creative Commons</input>
           </div>
           <br/>
-          <div>
-            <label>Creative Commons Types </label>
-          </div>
-          <div>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="cc[]" value="1"> Attribution
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="cc[]" value="2"> Noncommercial
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" name="cc[]" value="3"> No Derivative Works
-            </label>
-          </div>
+          <label>Creative Commons Types </label>
+          <p>
+            <input type="checkbox" name="type" value="1"> Attribution</input>
+            <input type="checkbox" name="type" value="2"> Noncommercial</input>
+            <input type="checkbox" name="type" value="3"> No Derivative Works</input>
+           </p>
           <div class="checkbox">
-            <label>
-              <input type="checkbox"/>I accept the software license
-            </label>
+            <input type="checkbox"/>I accept the software license</input>
           </div>
-          <div class="form-inline">
-            <div class="form-group">
+          <br>
+          <div class="row my-3">
+            <div class="form-gruop col-md-6 column">
               <label>Rate this photo:</label>
-              <br>
-              <input type="number" min="1" max="5" name="rate" class="form-control"/>
+              <input type="number" class="form-control">
             </div>
-            <div class="form-group">
-              <label>Color Collection:</label>
-              <br>
-              <input type="color" name="color" class="form-control"/>
+            <div class="form-gruop col-md-6 column">
+              <label>Color Collection</label>
+              <input type="color" class="form-control">
             </div>
           </div>
-          <br/>
-          <div class="form-inline">
-            <div class="form-group">
+          <div class="row my-3">
+            <div class="form-gruop col-md-6 column">
               <label>Date Taken:</label>
-              <br>
-              <input type="date" name="date" class="form-control"/>
+              <input type="date" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="form-gruop col-md-6 column">
               <label>Time Taken:</label>
-              <br>
-              <input type="time" name="time" class="form-control"/>
+              <input type="time" class="form-control">
             </div>
           </div>
-          <br/>
+
+
+
+
+
+
           <div class="btn-group">
             <button type="submit" class="btn btn-secondary">Submit</button>
             <button type="reset" class="btn btn-secondary">Clear</button>
@@ -133,7 +118,5 @@
     </div>
   </div>
 </section>
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/bootstrap.js"></script>
 </body>
 </html>
