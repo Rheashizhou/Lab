@@ -12,6 +12,11 @@ function show(){
     let num = countries[i];
     outputCountry(num.name,num.continent,num.cities,num.photos);
   }
+  let parentNode = document.getElementsByClassName("flex-container justify")[0];
+  let nodes = document.getElementsByClassName('item');
+  for (let i = 0; i < nodes.length; i++) {
+    parentNode.appendChild(nodes[i]);
+  }
 }
 function outputCountry(name, continent, cities, photos){
   document.write('<div class="item" >');
