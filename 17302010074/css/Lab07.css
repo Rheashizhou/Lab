@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+select,button{
+    width: 300px;
+}
+
+table{
+    width:300px;
+    margin:0 auto;
+}
+
+table tr:nth-child(odd) {
+    background:lightgrey;
+}
+
+td{
+    padding:0 0.5em;
+}
+
+table th {
+    padding:0 0.5em;
+    color:whitesmoke;
+    background-color: grey;
+}
