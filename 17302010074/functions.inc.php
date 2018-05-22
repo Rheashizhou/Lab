@@ -11,73 +11,28 @@ function generateLink($url, $label, $class) {
 function outputPostRow($number)  {
     include("travel-data.inc.php");
     if($number==1){
-      $thumb= "<img src=\"images\\" .$thumb1 ."\" style=\"margin:10px\">";
-      $title = "<h2>" .$title1 ."</h2>";
-      $userName = "<span>POSTED BY " .generateLink("#",$userName1,"") ."</span>";
-      $date = "<span style=\"float:right\">" .$date1 ."</span>";
-      $reviewsRating = "<br>" .constructRating($reviewsRating1);
-      $reviewsNum = "<span>" .$reviewsNum1 ." REVIEWS</span>";
-      $excerpt = "<p style=\"margin-top:10px\">" .$excerpt1 ."</p>";
-      $button = "<a class=\"btn btn-warning btn-sm\">Read more</a>";
-      $hr = "<hr style=\"clear:both;\">";
-
-      $show = "<div>";
-      $show .= "<div class=\"col-md-4\">" .$thumb ."</div>";
-      $show .= "<div class=\"col-md-8\">" .$title;
-      $show .= $userName;
-      $show .= $date;
-      $show .= $reviewsRating;
-      $show .= $reviewsNum;
-      $show .= $excerpt;
-      $show .= $button ."</div></div>";
-      $show .= $hr;
-      echo $show;
+      echo "<div class=\"row\">
+      <div class=\"col-md-4\"><a href=\"post.php?id=".$postId1."\"><img src=\"images/".$thumb1."\" class=\"img-responsive\"/></a></div>
+      <div class=\"col-md-8\"><h2>".$title1."</h2><div class=\"details\">Posted by ".generateLink("user.php?id=".$userId1,$userName1,"")."
+      <span class=\"pull-right\">".$date1."</span><p class=\"ratings\">
+      ".constructRating($reviewsRating1)."".$reviewsNum1." Reviews</p></div>
+      <p class=\"excerpt\">".$excerpt1."</p><p><a href=\"post.php?id=1\" class=\"btn btn-primary btn-sm\">Read more</a></p></div></div><hr/>";
     }
     if($number==2){
-      $thumb= "<img src=\"images\\" .$thumb2 ."\" style=\"margin:10px\">";
-      $title = "<h2>" .$title2 ."</h2>";
-      $userName = "<span>POSTED BY " .generateLink("#",$userName2,"") ."</span>";
-      $date = "<span style=\"float:right\">" .$date2 ."</span>";
-      $reviewsRating = "<br>" .constructRating($reviewsRating2);
-      $reviewsNum = "<span>" .$reviewsNum2 ." REVIEWS</span>";
-      $excerpt = "<p style=\"margin-top:10px\">" .$excerpt2 ."</p>";
-      $button = "<a class=\"btn btn-warning btn-sm\">Read more</a>";
-      $hr = "<hr style=\"clear:both;\">";
-
-      $show = "<div>";
-      $show .= "<div class=\"col-md-4\">" .$thumb ."</div>";
-      $show .= "<div class=\"col-md-8\">" .$title;
-      $show .= $userName;
-      $show .= $date;
-      $show .= $reviewsRating;
-      $show .= $reviewsNum;
-      $show .= $excerpt;
-      $show .= $button ."</div></div>";
-      $show .= $hr;
-      echo $show;
+      echo "<div class=\"row\">
+      <div class=\"col-md-4\"><a href=\"post.php?id=".$postId2."\"><img src=\"images/".$thumb2."\" class=\"img-responsive\"/></a></div>
+      <div class=\"col-md-8\"><h2>".$title2."</h2><div class=\"details\">Posted by ".generateLink("user.php?id=".$userId2,$userName2,"")."
+      <span class=\"pull-right\">".$date2."</span><p class=\"ratings\">
+      ".constructRating($reviewsRating2)."".$reviewsNum2." Reviews</p></div>
+      <p class=\"excerpt\">".$excerpt2."</p><p><a href=\"post.php?id=1\" class=\"btn btn-primary btn-sm\">Read more</a></p></div></div><hr/>";
     }
     if($number==3){
-      $thumb= "<img src=\"images\\" .$thumb3 ."\" style=\"margin:10px\">";
-      $title = "<h2>" .$title3 ."</h2>";
-      $userName = "<span>POSTED BY " .generateLink("#",$userName3,"") ."</span>";
-      $date = "<span style=\"float:right\">" .$date3 ."</span>";
-      $reviewsRating = "<br>" .constructRating($reviewsRating3);
-      $reviewsNum = "<span>" .$reviewsNum3 ." REVIEWS</span>";
-      $excerpt = "<p style=\"margin-top:10px\">" .$excerpt3 ."</p>";
-      $button = "<a class=\"btn btn-warning btn-sm\">Read more</a>";
-      $hr = "<hr style=\"clear:both;\">";
-
-      $show = "<div>";
-      $show .= "<div class=\"col-md-4\">" .$thumb ."</div>";
-      $show .= "<div class=\"col-md-8\">" .$title;
-      $show .= $userName;
-      $show .= $date;
-      $show .= $reviewsRating;
-      $show .= $reviewsNum;
-      $show .= $excerpt;
-      $show .= $button ."</div></div>";
-      $show .= $hr;
-      echo $show;
+      echo "<div class=\"row\">
+      <div class=\"col-md-4\"><a href=\"post.php?id=".$postId3."\"><img src=\"images/".$thumb3."\" class=\"img-responsive\"/></a></div>
+      <div class=\"col-md-8\"><h2>".$title3."</h2><div class=\"details\">Posted by ".generateLink("user.php?id=".$userId3,$userName3,"")."
+      <span class=\"pull-right\">".$date3."</span><p class=\"ratings\">
+      ".constructRating($reviewsRating3)."".$reviewsNum3." Reviews</p></div>
+      <p class=\"excerpt\">".$excerpt3."</p><p><a href=\"post.php?id=1\" class=\"btn btn-primary btn-sm\">Read more</a></p></div></div><hr/>";
     }
 
 }
