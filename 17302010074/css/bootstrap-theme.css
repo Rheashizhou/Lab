@@ -4,7 +4,7 @@
   font-size: 0.8em;
   padding-top: 1em;
 }
-.topHeaderRow  a:link {
+.topHeaderRow  a:link { 
   color: #E8EAF6;
 }
 .topHeaderRow  a:hover { 
@@ -18,69 +18,47 @@
 
 .description {
     margin-top: 8px;
-   font-size: 20px;
+   font-size: 20px;   
 }
 
 .details-list {
-   list-style-type: none;
+   list-style-type: none;   
     padding-left: 0;
 }
 .details-list li {
-    margin: 5px 0 0 0;
+    margin: 5px 0 0 0;    
 }
 
 #tags span.label {
-   line-height: 26px;
+   line-height: 26px;   
 }
 
 .caption {
-     text-align: center;
+     text-align: center;   
 }
 .thumbnail {
-     border-color: #9FA8DA;
+     border-color: #9FA8DA;   
 }
 .portfolio-item {
-   margin-top: 10px;
+   margin-top: 10px;   
 }
 
 footer {
-   background-color:  #303F9F;
+   background-color:  #303F9F;  
     color: #E8EAF6;
     font-size: 80%;
 }
 footer .final {
         padding-top: 10px;
 margin-top: 10px;
-    background-color:  #1A237E;
+    background-color:  #1A237E; 
     text-align: center;
 }
 
 footer hr {
-   margin-bottom: 0;
+   margin-bottom: 0;   
 }
 
-#postJumbo {
-   background-image: url(../images/post-background.jpg);
-}
-#postJumbo h1 {
-   margin-top: 0;
-}
-
-.postlist h2 {
-  margin-top: 0;
-}
-
-.postlist div.details {
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
-.postlist p.excerpt {
-  margin-top: 0.4em;
-}
-.ratings {
-    margin-top: 5px;
-}
-.ratings img {
-    vertical-align: top;
+.countryButtons  {
+    margin-bottom: 10px;
 }
