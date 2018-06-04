@@ -109,11 +109,19 @@ if ($conn->connect_error) {
       </a>
       </li>
       */
+      if(isset($_GET["continent"])){
+        $continent = $_GET["continent"];
+        $iscontinent = empty($continent);
+      }else {
+        $iscontinent = true;        
+      }
+      if(isset($_GET["country"])){
+        $country = $_GET["country"];
+        $iscountry = empty($country);
+      }else {
+        $iscountry = true;
+      }
 
-      $continent = $_GET["continent"];
-      $country = $_GET["country"];
-      $iscontinent = empty($continent);
-      $iscountry = empty($country);
 
       if (!$iscontinent && $iscountry) {
         $sql="SELECT * FROM imagedetails WHERE ContinentCode = '".$continent."' ";
